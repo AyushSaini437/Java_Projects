@@ -1,0 +1,12 @@
+Repository ---> Connects with database.
+Services ---> All the logic.
+Entity ---> To store data in the database.
+DTO(Data Transfer Object) ---> Those objects that are need not to be stored in Database.
+Controllers ---> All the function calling is done by the controllers.
+
+JPA(Java Persistence API) ---> Provides pre-defined functions that helps in working with database and mapping.
+ORM(Object Relational Mapping) ---> Helps in mapping object into relational database and vice versa. Hibernate handles
+all of this in the backend in ORM. All we have to do is tell the mapping
+
+JpaRepository<E, ID> ---> E means Entity and ID means what is the data type of primary key in the same entity.
+
