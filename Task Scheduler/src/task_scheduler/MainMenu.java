@@ -34,6 +34,7 @@ public class MainMenu {
                         }
                     }
                 }
+
                 case 2 -> {
                     System.out.print("Enter ID: ");
                     int id = in.nextInt();
@@ -44,6 +45,15 @@ public class MainMenu {
                     int priority = in.nextInt();
 
                     taskManager.addTask(new Task(id, name, priority));
+                }
+
+                case 3 -> {
+                    Task task = taskManager.getNextTask();
+                    if(task == null){
+                        System.out.println("No Task right now");
+                    }else {
+                        System.out.println(task);
+                    }
                 }
 
                 case 5 -> {
