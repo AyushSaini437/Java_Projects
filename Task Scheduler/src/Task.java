@@ -1,7 +1,7 @@
 public class Task {
-    int taskID;
-    String taskName;
-    int taskPriority;
+    private int taskID;
+    private String taskName;
+    private int taskPriority;
 
     public Task(int taskID, String taskName, int taskPriority) {
         this.taskID = taskID;
