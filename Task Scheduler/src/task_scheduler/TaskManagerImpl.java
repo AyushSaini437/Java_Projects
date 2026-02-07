@@ -25,9 +25,10 @@ public class TaskManagerImpl implements TaskManager{
         return true;
     }
 
+
     @Override
     public List<Task> getAllTasks(){
-        return new ArrayList<>(queue);
+            return new ArrayList<>(queue);
     }
 
     @Override
