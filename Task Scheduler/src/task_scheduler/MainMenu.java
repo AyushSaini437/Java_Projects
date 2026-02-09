@@ -1,6 +1,5 @@
 package task_scheduler;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -54,6 +53,10 @@ public class MainMenu {
                     }else {
                         System.out.println(task);
                     }
+                }
+
+                case 4 -> {
+
                 }
 
                 case 5 -> {
