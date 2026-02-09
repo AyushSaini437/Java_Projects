@@ -56,7 +56,6 @@ public class MainMenu {
                 }
 
                 case 4 -> {
-
                 }
 
                 case 5 -> {
