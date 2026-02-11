@@ -18,7 +18,6 @@ public class TaskManagerImpl implements TaskManager{
     public boolean addTask(Task task){
         for(Task i : queue){
             if(task.getTaskID() == i.getTaskID()){
-                System.out.println("Task with same ID already exist!!!");
                 return false;
             }
         }

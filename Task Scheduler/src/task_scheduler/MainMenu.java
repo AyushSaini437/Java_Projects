@@ -43,7 +43,13 @@ public class MainMenu {
                     System.out.print("Enter priority: ");
                     int priority = in.nextInt();
 
-                    taskManager.addTask(new Task(id, name, priority));
+                    boolean added = taskManager.addTask(new Task(id, name, priority));
+
+                    if (added){
+                        System.out.println("Task added successfully");
+                    }else {
+                        System.out.println("Task with ID already exist");
+                    }
                 }
 
                 case 3 -> {
@@ -56,6 +62,13 @@ public class MainMenu {
                 }
 
                 case 4 -> {
+                    Task task = taskManager.getNextTask();
+                    if (task != null){
+                        taskManager.executeNextTask();
+                        System.out.println("Task Executed Successfully");
+                    }else {
+                        System.out.println("No Task right now");
+                    }
                 }
 
                 case 5 -> {
